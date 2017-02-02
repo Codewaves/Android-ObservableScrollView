@@ -11,8 +11,8 @@ dependencies {
 }
 
 android {
-    compileSdkVersion 23
-    buildToolsVersion "23.0.2"
+    compileSdkVersion 25
+    buildToolsVersion "25.0.2"
 
     defaultConfig {
         minSdkVersion 9
@@ -47,10 +47,3 @@ afterEvaluate { project ->
         logging.level = LogLevel.INFO
     }
 }
-
-apply plugin: 'com.github.kt3k.coveralls'
-
-coveralls.jacocoReportPath = 'build/reports/coverage/debug/report.xml'
-
-// This is from 'https://github.com/chrisbanes/gradle-mvn-push'
-apply from: "${rootDir}/gradle/gradle-mvn-push.gradle"
